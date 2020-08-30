@@ -1,0 +1,8 @@
+Django==2.2.2
+Pillow==2.6.1
+argparse==1.2.1
+sorl-thumbnail==12.5.0
+boto3==1.9.62
+django-storages==1.7.1
+coveralls
+boto==2.49.0
