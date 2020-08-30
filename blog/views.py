@@ -12,6 +12,7 @@ import calendar
 
 
 def index(request):
+    context = {'foo': 'bar'}
     news_list = Post.objects.filter(
         is_featured_news=True, is_active=True).order_by('-created_on')[0:8]
     post_list = Post.objects.filter(
@@ -21,7 +22,7 @@ def index(request):
         is_active=True).order_by('-start_date')[0:4]
     menu_list = Menu.objects.filter(parent=None, is_active=True)
     banner_list = Banner.objects.all()
-    return render_to_response("site/home_page.html",
+    return render(None,"site/home_page.html",
                               {'news_list': news_list,
                                'banner_list': banner_list,
                                'footer_events': footer_events,

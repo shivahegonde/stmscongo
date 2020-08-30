@@ -13,7 +13,7 @@ DEBUG = os.getenv('DEBUG', True)
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = [ '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = [ '127.0.0.1', 'localhost','ec2-18-191-196-72.us-east-2.compute.amazonaws.com']
 
 LOGIN_URL = "/admin/"
 
