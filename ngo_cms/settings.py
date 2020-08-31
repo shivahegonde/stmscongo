@@ -76,6 +76,7 @@ USE_L10N = True
 USE_TZ = True
 
 AUTH_USER_MODEL = "admin.User"
+EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'
 
 STORAGE_TYPE = os.getenv('STORAGE_TYPE', 'normal')
 

@@ -3512,12 +3512,28 @@ padding: 0px 25px 15px 25px;
 .banner .contact_banner{
     margin: 0px auto;
     text-align: center;
-    border: 2px solid #10bcfa;
     font-size: 1rem;
     font-weight: 600;
-    background: #fff; 
-    padding: 5px;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    background-color: #18f;
+    padding: 15px 45px;
+    border-radius: 30px;
 }
+.banner .donate_banner{
+    margin: 0px auto;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    background-color: #1BD;
+    padding: 15px 45px;
+    border-radius: 30px;
+}
+
 .banner .contact_banner:hover{
   text-decoration: none;
 }
